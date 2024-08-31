@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230617/pngtree-mri-lab-showcases-3d-rendered-computer-monitor-display-of-a-brain-image_3633202.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(rgb(136, 113, 113), rgb(147, 155, 147), rgb(156, 156, 170), alpha);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+    
+}
+
+.wrapper h1{
+    font-size: 25px;
+    font-display: #fff;
+    text-align: center; 
+    margin-left: 0px;
+}
+
+.wrapper .input-box{
+    width: 100px;
+    height: 50px;
+    padding: 20px 45px 20px 20px;
+
+}
+
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.wrapper .btn{
+    margin-left: 300px; 
+    margin-bottom: 45px;
+    background: #09163a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px;
+    cursor: pointer;
+    font-size: 15px;
+    
+    
+
+}
