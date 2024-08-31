@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 0;
+        padding: 0;
+        text-align: center; 
+        background-image: url('https://images.magellantv.com/1920x1080/S_1077_407_TheBrainThatChangesItself_NoTitle.jpg');
+        background-size:97%;;
+        
+        background-position:top ;
+    }
+    .container {
+        margin:40px;
+    }
+    h1 {
+        color: #fff;
+    }
+    .result {
+        font-size: 24px; 
+        margin-top: 20px; 
+        background-color: rgba(176, 168, 168, 0.8); /* Semi-transparent white background */
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-top: 20px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title><b>Prediction Result</b></title>
+    
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; text-align: center; }
+        .result { font-size: 24px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result">
+        {{ prediction }}
+    </div>
+    <a href="{{ url_for('index') }}">Upload Another Image</a>
+</body>
+</html>
