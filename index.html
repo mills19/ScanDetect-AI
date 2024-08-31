@@ -1,0 +1,44 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/design.css') }}">
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; margin: 100px; }
+        .wrapper { display: flex; flex-direction: column; align-items: center; }
+        form { display: flex; flex-direction: column; width: 300px; align-items: center; }
+        .input-box { display: flex; flex-direction: column; align-items: center; width: 100%; }
+        input[type="file"] { margin-bottom: 20px; }
+        img { margin-top: 20px; max-width: 100%; max-height: 300px; display: none; }
+        button { padding: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+           <h1 class="title">Upload MRI Scan</h1>
+            <div class="input-box">
+                <input type="file" id="fileInput" name="file" accept="image/*" required>
+                <img id="preview" src="#" alt="Image Preview">
+            </div>
+            <button type="submit" class="btn">Predict</button> 
+        </form>
+    </div>
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            var reader = new FileReader();
+            reader.onload = function(){
+                var output = document.getElementById('preview');
+                output.src = reader.result;
+                output.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+    </script>
+</body>
+</html>
+ 
