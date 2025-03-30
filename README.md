@@ -9,6 +9,7 @@ This project explores the application of Convolutional Neural Networks (CNNs) fo
 Dataset used: Br35H :: Brain Tumor Detection 2020 (kaggle.com)
 Dataset description:The dataset contains 3 folders: yes, no and pred which contains 3060 Brain MRI Images.
 
-![image](https://github.com/user-attachments/assets/e820a282-8f74-4578-a8c7-2ea77bfeb651)
+![image](https://github.com/user-attachments/assets/b87d9439-3b1c-4915-9d52-340dfe9eb0e1)
+
 
 
